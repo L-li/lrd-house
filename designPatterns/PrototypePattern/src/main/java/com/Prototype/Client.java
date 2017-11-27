@@ -5,6 +5,11 @@ import java.util.Date;
 public class Client {
     public static void main(String[] args) throws Exception {
         /**
+         * 查看object类的clone方法
+         */
+        Object object;
+
+        /**
          * 浅克隆
          */
         Date date = new Date(1234455667);
@@ -20,20 +25,27 @@ public class Client {
         System.out.println(person2.getName());
 //        date.setTime(222222222);
 //        person1.setBirthday(date);
-//
-//        System.out.println(person1.getBirthday());
-//        System.out.println(person2.getBirthday());
+        System.out.println(person1.getBirthday());
+        System.out.println(person2.getBirthday());
 
         /**
-         * 深克隆
+         * 深克隆(克隆自身)
          */
-//        DeepPerson deepPerson = new DeepPerson();
-//        deepPerson.setBirthday(date);
-//        DeepPerson deepPerson1 = deepPerson.clone();
-//        date.setTime(1233422342);
-//        deepPerson.setBirthday(date);
-//        System.out.println(deepPerson.getBirthday());
-//        System.out.println(deepPerson1.getBirthday());
+        DeepPerson deepPerson = new DeepPerson();
+        deepPerson.setBirthday(date);
+        DeepPerson deepPerson1 = deepPerson.clone();
+        date.setTime(1233422342);
+        deepPerson.setBirthday(date);
+        System.out.println(deepPerson.getBirthday());
+        System.out.println(deepPerson1.getBirthday());
+
+
+        /**
+         * 深克隆(深克隆序列化)
+         */
+
+//        Outer outer = new Outer();
+//        outer.myclone()
 
     }
 }
