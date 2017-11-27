@@ -31,21 +31,30 @@ public class Client {
         /**
          * 深克隆(克隆自身)
          */
-        DeepPerson deepPerson = new DeepPerson();
-        deepPerson.setBirthday(date);
-        DeepPerson deepPerson1 = deepPerson.clone();
-        date.setTime(1233422342);
-        deepPerson.setBirthday(date);
-        System.out.println(deepPerson.getBirthday());
-        System.out.println(deepPerson1.getBirthday());
+//        DeepPerson deepPerson = new DeepPerson();
+//        deepPerson.setBirthday(date);
+//        DeepPerson deepPerson1 = deepPerson.clone();
+//        date.setTime(1233422342);
+//        deepPerson.setBirthday(date);
+//        System.out.println(deepPerson.getBirthday());
+//        System.out.println(deepPerson1.getBirthday());
 
 
         /**
          * 深克隆(深克隆序列化)
          */
-
-//        Outer outer = new Outer();
-//        outer.myclone()
+        DeepPersonSer deepPersonSer = new DeepPersonSer();
+        deepPersonSer.setName("可序列化");
+        deepPersonSer.setBirthday(date);
+        DeepPersonIo deepPersonIo = new DeepPersonIo();
+        deepPersonIo.setDeepPersonSer(deepPersonSer);
+        System.out.println("克隆前对象: " + deepPersonIo.toString());
+        //克隆
+        DeepPersonIo deepPersonIo1 = (DeepPersonIo) deepPersonIo.myClone();
+        deepPersonIo1.getDeepPersonSer().setBirthday(new Date(222222222));
+        deepPersonIo1.getDeepPersonSer().setName("可序列化后");
+        System.out.println("克隆后新对象: " + deepPersonIo1.toString());
+        System.out.println("克隆前的对象: " + deepPersonIo.toString());
 
     }
 }
