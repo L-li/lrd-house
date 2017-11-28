@@ -5,6 +5,7 @@ import java.util.Date;
 
 public class DeepPersonSer implements Serializable {
 
+    private static final long serialVersionUID = -323919189005560804L;
     private String name;
 
     private Date birthday;
