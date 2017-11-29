@@ -1,6 +1,4 @@
-package FactoryPattern;
-
-import static javafx.scene.input.KeyCode.G;
+package com.FactoryPattern;
 
 /**
  * Created by Administrator on 2017/11/9.

@@ -1,4 +1,4 @@
-package SingletonPattern;
+package com.SingletonPattern;
 
 public class SingletonNotAttackByReflect
 {

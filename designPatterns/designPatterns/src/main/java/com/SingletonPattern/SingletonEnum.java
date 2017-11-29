@@ -1,4 +1,4 @@
-package SingletonPattern;
+package com.SingletonPattern;
 
 /**
  * Created by LRD on 2017/10/26.

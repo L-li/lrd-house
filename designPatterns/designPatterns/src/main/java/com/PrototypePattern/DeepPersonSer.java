@@ -1,4 +1,4 @@
-package PrototypePattern;
+package com.PrototypePattern;
 
 import java.io.Serializable;
 import java.util.Date;

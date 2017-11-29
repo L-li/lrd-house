@@ -1,4 +1,4 @@
-package PrototypePattern;
+package com.PrototypePattern;
 
 
 
