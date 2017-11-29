@@ -19,13 +19,13 @@ public class Client {
         person1.setName("李四");
         person1.setBirthday(date);
         Person person2 = person1.clone();
-        person1.setName("张三");  // 改变person1的名字
+//        person1.setName("张三");  // 改变person1的名字
         System.out.println(person1);
         System.out.println(person2);
         System.out.println(person1.getName());
         System.out.println(person2.getName());
-        date.setTime(222222222);
-        person1.setBirthday(date);//改变person1的生日
+//        date.setTime(222222222);
+//        person1.setBirthday(date);//改变person1的生日
         System.out.println(person1.getBirthday());
         System.out.println(person2.getBirthday());
 
