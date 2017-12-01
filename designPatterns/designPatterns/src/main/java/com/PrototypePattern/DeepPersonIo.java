@@ -6,8 +6,7 @@ import java.io.*;
 
 public class DeepPersonIo implements Serializable {
 
-
-    private static final long serialVersionUID = -5382578220376353353L;
+    private static final long serialVersionUID = 6695620398162277901L;
     private DeepPersonSer deepPersonSer;
 
 
