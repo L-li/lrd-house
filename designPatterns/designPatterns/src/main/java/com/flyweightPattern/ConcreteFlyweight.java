@@ -1,16 +1,26 @@
 package com.flyweightPattern;
 
-public class ConcreteFlyweight extends Flyweight {
+public class ConcreteFlyweight implements Flyweight{
     private String name;
     private String writer;
 
-
-    public ConcreteFlyweight(String new_name){
-        name =new_name;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
     @Override
     public void sell() {
         System.out.println("卖了一本书，书名为'"+name+"'");
+    }
+
+    @Override
+    public void getOwnername(Owner owner) {
+        System.out.println("卖了一本书，书名为'"+name+"'");
+        System.out.println("拥有者："+owner.getOwnerName());
     }
 
 
@@ -18,7 +28,7 @@ public class ConcreteFlyweight extends Flyweight {
     public String toString() {
         return "ConcreteFlyweight{" +
                 "name='" + name + '\'' +
-                ", age='" + writer + '\'' +
+                ", writer='" + writer + '\'' +
                 '}';
     }
 }

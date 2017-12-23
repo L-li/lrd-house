@@ -1,5 +1,6 @@
 package com.flyweightPattern;
 
-public  abstract class Flyweight {
-    public abstract void sell();
+public  interface Flyweight {
+    void sell();
+    void getOwnername(Owner owner);
 }
