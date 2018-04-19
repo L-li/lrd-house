@@ -11,10 +11,10 @@ public class FlyweightPatternDemo {
     Flyweight fly4;
 
     public FlyweightPatternDemo() {
-        fly1 = factory.getFlyweight("编程思想","1");
-        fly2 = factory.getFlyweight("jvm","2");
-        fly3 = factory.getFlyweight("编程思想","1");
-        fly4 = factory.getFlyweight("编程思想","1");
+        fly1 = factory.getFlyweight("编程思想", "1");
+        fly2 = factory.getFlyweight("jvm", "2");
+        fly3 = factory.getFlyweight("编程思想", "1");
+        fly4 = factory.getFlyweight("编程思想", "1");
     }
 
     public void showFlyweight() {
