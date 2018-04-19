@@ -31,14 +31,14 @@ public class FlyweightPatternDemo {
         System.out.println();
     }
 
-//    public void showFlyweight() {
-//        fly1.getOwnername(new Owner("小明"));
-//        fly2.getOwnername(new Owner("小丽"));
-//        fly3.getOwnername(new Owner("小张"));
-//        fly4.getOwnername(new Owner("小王"));
-//        int objSize = factory.getFlyweightSize();
-//        System.out.println("创建对象的数量-->" + objSize);
-//    }
+/*    public void showFlyweight() {
+        fly1.getOwnername(new Owner("小明"));
+        fly2.getOwnername(new Owner("小丽"));
+        fly3.getOwnername(new Owner("小张"));
+        fly4.getOwnername(new Owner("小王"));
+        int objSize = factory.getFlyweightSize();
+        System.out.println("创建对象的数量-->" + objSize);
+    }*/
 
     public static void main(String[] args) {
         FlyweightPatternDemo flyweightPattern = new FlyweightPatternDemo();
