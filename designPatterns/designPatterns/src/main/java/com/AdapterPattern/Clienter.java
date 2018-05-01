@@ -25,7 +25,7 @@ public class Clienter {
      * 接口适配器模式
      */
     public static void adapterInterface() {
-        A a = new Aer();
+        A a = new AAdapter();
         a.a();
         a.c();
     }

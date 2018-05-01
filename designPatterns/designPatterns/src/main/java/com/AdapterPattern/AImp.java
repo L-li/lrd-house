@@ -3,7 +3,7 @@ package com.AdapterPattern;
 /**
  * Created by LRD
  */
-public class AdapterInterface implements A{
+public class AImp implements A{
     @Override
     public void a() {
 

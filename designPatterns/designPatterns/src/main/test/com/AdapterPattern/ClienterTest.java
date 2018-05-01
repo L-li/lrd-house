@@ -64,7 +64,7 @@ public class ClienterTest {
      */
     @Test
     public void testAdapterInterface() throws Exception {
-        A a = new Aer();
+        A a = new AAdapter();
         a.a();
         a.c();
     }

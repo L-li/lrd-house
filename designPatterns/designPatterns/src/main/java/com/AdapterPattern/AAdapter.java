@@ -3,7 +3,7 @@ package com.AdapterPattern;
 /**
  * Created by LRD
  */
-public class Aer extends AdapterInterface {
+public class AAdapter extends AImp {
     @Override
     public void a() {
         System.out.println("实现a方法被调用");
