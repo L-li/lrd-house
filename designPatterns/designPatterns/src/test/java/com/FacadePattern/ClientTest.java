@@ -25,7 +25,7 @@ public class ClientTest {
     @Test
     public void testMain() throws Exception {
         EncryptFacade ef = new EncryptFacade();
-        File directory = new File("");// 参数为空
+        File directory = new File("");
         try {
             String courseFile = directory.getCanonicalPath();
             ef.fileEncrypt(courseFile + "/src/main/resources/facade/src.txt", courseFile + "/src/main/resources/facade/des.txt");
