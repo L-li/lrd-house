@@ -1,7 +1,4 @@
-package test.com.FacadePattern;
-
-import com.FacadePattern.EncryptFacade;
-import com.FacadePattern.NewEncryptFacade;
+package com.FacadePattern;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -39,7 +36,7 @@ public class ClientTest {
      */
     @Test
     public void testTestAbstract() throws Exception {
-        NewEncryptFacade nef = new NewEncryptFacade();
+        AbstractEncryptFacade nef = (AbstractEncryptFacade) getClass(NewEncryptFacade.class);
         File directory = new File("");// 参数为空
         try {
             String courseFile = directory.getCanonicalPath();
@@ -49,5 +46,13 @@ public class ClientTest {
         }
     }
 
-
+    public static Object getClass(Class<?extends AbstractEncryptFacade> clazz) {
+        Object obj = null;
+        try {
+            obj = Class.forName(clazz.getName()).newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return obj;
+    }
 } 
